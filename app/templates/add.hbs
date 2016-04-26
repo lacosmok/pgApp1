@@ -1,0 +1,9 @@
+
+<form {{action 'saveVehicle' on='submit'}}>
+    <label>Nazwa: {{input type='text' value=model.name}}</label>
+    <label>Kolor: {{input type='text' value=model.color}}</label>
+    <label>Ilość miejsc:{{input type='number' value=model.places}}</label>
+    {{input type='submit' value='Zapisz' class="btn-main"}}
+</form>
+
+{{outlet}}

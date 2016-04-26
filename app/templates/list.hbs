@@ -8,6 +8,10 @@
             <div class="col-md-2">
                 {{vehicle.places}}
             </div>
+            <div class="col-md-1">
+                <button type="button" {{action "removeVehicle" vehicle}}>usuń</button>
+                {{#link-to 'edit' vehicle}}edytuj{{/link-to}}
+            </div>
         </div>
 
     {{/each}}

@@ -5,7 +5,10 @@ export default Ember.Controller.extend({
         saveVehicle() {
 
             this.get('model').save().then(
-                ()=>console.log("Zapisany")
+                ()=>{
+                    console.log("Zapisany");
+                    this.transitionToRoute('list');
+                }
             );
         }
     }

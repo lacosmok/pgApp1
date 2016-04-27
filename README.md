@@ -1,4 +1,24 @@
-# App1
+Utworzyłem 4 branche w ktorych są kolejne etapy aplikacji:
+
+Zrobione na spotkaniu 1:
+1) emptyProject - pusty czysty postawiony projekt. Tu proszę się upewnić czy wersje bibliotek w bower.json oraz package.json są odpowiednich lub wyższych wersjach. Szczególnie ember i ember-data.
+
+2) firstForm - podstawowy formularz, czyli route/add.js oraz template/add.hbs oraz odpowiedni wpis w routes.js
+
+Będziemy robić na spotkaniu 2:
+3) list - utworzona lista obiektow ktore zostały wyslane do bazy. Zainstalowany bootstrap, ktory pomoże układać elementy
+
+4) delEdit - formularz edycji oraz akcja usowania obiektow
+
+
+# Zadanie domowe
+1) Utworzyć swój pełny model danych z potrzebnymi polami. Dodać te pola w formularzu dodawani. Sprawdzić czy wszystkie dane dodają się do firebase.com
+
+2) Można sformatować formularz aby był bardziej czytelny ( zabawa z HTML i CSS )
+
+
+
+# App1 - instrukcja stawiania projektu
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.

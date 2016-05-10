@@ -10,7 +10,11 @@
     <label>Nazwa: {{input type='text' value=model.name}}</label>
     <label>Kolor: {{input type='text' value=model.color}}</label>
     <label>Ilość miejsc:{{input type='number' value=model.places}}</label>
-
+    <label>Opcje:
+        {{#each options as |option|}}
+            <label>{{input type='checkbox' checked=true on='change' action='applyOption'}}&nbsp;{{option.name}}</label>
+        {{/each}}
+    </label>
     {{input type='submit' value='Zapisz' class="btn-main"}}
 </form>
 

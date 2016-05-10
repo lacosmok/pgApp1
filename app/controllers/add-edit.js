@@ -9,6 +9,9 @@ export default Ember.Controller.extend({
                 this.set('marks', marks);
             }
         );
+        this.get('store').findAll('option').then(
+            options => this.set('options', options)
+        )
 
 
     },
@@ -24,6 +27,9 @@ export default Ember.Controller.extend({
             this.get('store').find('mark', newMark).then(
                 mark => this.set('model.mark', mark)
             );
+        },
+        applyOption(target) {
+            console.log("Target : ", target);
         }
     }
 });

@@ -7,6 +7,7 @@ export default Model.extend({
     places: attr('number'),
     color: attr('string'),
 
-    mark : DS.belongsTo('mark', { async : true })
+    mark : DS.belongsTo('mark'),
 
+    options : DS.hasMany('option')
 });
